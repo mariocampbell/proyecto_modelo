@@ -1,6 +1,6 @@
 function init(){
-    "use strict";
-    
+    'use strict';
+
 }
 
 window.addEventListener('load', init, false);

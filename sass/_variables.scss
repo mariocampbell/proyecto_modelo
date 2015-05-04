@@ -2,18 +2,58 @@
 //<!--               $CONTENIDO                   -->
 //<!-- ****************************************** -->
 
-//* FONTS................Cargamos fuentes institucionales
+//* COMPASS..............Importamos compass
+//* SUSY.................Parámetros grales de Susy
+//* FONTS................Importamos fuentes Font-Face
 //* FONT-ICONS...........Cargamos fuentes font Awesome
 //* COLORS...............Establecemos los colores necesarios
-//* BREAKPOINTS..........Establecemos los breakpoints susy
+//* BREAKPOINTS..........Establecemos los breakpoints
  
 //<!-- ------------ END CONTENIDO --------------- -->
 //<!-- ****************************************** -->
 
 
+
+/*<!-- ------------------------------------------ -->*/
+/*<!--                 $COMPASS                   -->*/
+/*<!-- ------------------------------------------ -->*/
+@import 'compass'; 
+/*<!-- ------------- END $compass --------------- -->*/
+/*<!-- ------------------------------------------ -->*/
+
+
+
+/*<!-- ------------------------------------------ -->*/
+/*<!--                  $SUSY                     -->*/
+/*<!-- ------------------------------------------ -->*/
+@import 'susy';
+@import 'breakpoint';
+
+$susy: (
+    columns: 12,
+    gutters: 0.25,
+    gutter-position: after,
+    debug: (
+        image: hide,
+        color: rgba(#66f, 0.25),
+        output: background,
+        toggle: top right,
+    ),
+    use-custom: (
+        box-sizing: true
+    )
+);
+/*<!-- -------------- END $susy ----------------- -->*/
+/*<!-- ------------------------------------------ -->*/
+
+
+
 /*<!-- ------------------------------------------ -->*/
 /*<!--                 $FONTS                     -->*/
 /*<!-- ------------------------------------------ -->*/
+
+/*<!-- ---------- $Fuente Font Face ------------- -->*/ 
+//@import url('Nombre fueten', font-files('/path/fuente.ttf', 'path/fuente.oet', 'path/fuente.woff'));
 
 /*<!-- -------------- END $fonts ---------------- -->*/
 /*<!-- ------------------------------------------ -->*/
@@ -22,8 +62,14 @@
 /*<!-- ------------------------------------------ -->*/
 /*<!--              $FONT-ICONS                   -->*/
 /*<!-- ------------------------------------------ -->*/
-@import "font-awesome-sprockets";
-@import "font-awesome";
+
+/*<!-- ---------- $FONT ICONS SASS -------------- -->*/ 
+//@import "font-awesome-sprockets";
+//@import "font-awesome";
+
+/*<!-- ----------- $FONT ICONS WEB -------------- -->*/ 
+//@import url('http:////maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
 /*<!-- ---------- END $font-icons --------------- -->*/
 /*<!-- ------------------------------------------ -->*/
 
@@ -38,10 +84,10 @@
 /*<!-- ------------------------------------------ -->*/
 /*<!--              $BREAKPOINTS                  -->*/
 /*<!-- ------------------------------------------ -->*/
-$bp-480 : 480px; // 30em
-$bp-600 : 600px; // 37.5em
-$bp-768 : 768px; // 48em
-$bp-900 : 900px; // 56.25em 
-$bp-1100 : 1100px; // 68.75em
+$bp-480       : 30em;   // 480px
+$bp-600       : 37.5em; // 600px
+$bp3-768      : 48em;   // 768px
+$bp4-900      : 56.25em;// 900px
+$bp5-1100     : 68.75em;// 1100px
 /*<!-- ---------- END $breakpoints -------------- -->*/
 /*<!-- ------------------------------------------ -->*/

@@ -2,7 +2,6 @@
 //<!--               $CONTENIDO                   -->
 //<!-- ****************************************** -->
 
-//* SUSY...................Configuracion por defecto de Susy
 //* BODY..................."Introducir comentario"
 //* HEADER................."Introducir comentario"
 //* SECTION................"Introducir comentario"
@@ -11,27 +10,6 @@
 //<!-- ------------ END CONTENIDO --------------- -->
 //<!-- ****************************************** -->
 
-
-
-/*<!-- ------------------------------------------ -->*/
-/*<!--                  $SUSY                     -->*/
-/*<!-- ------------------------------------------ -->*/
-@import 'susy';
-@import 'breakpoint';
-
-$susy: (
-    gutter-position: after,
-    columns: 12,
-    gutters: 0.25,
-    debug: (
-        image: hide,
-        color: rgba(#66f, 0.25),
-        output: background,
-        toggle: top right,
-    )
-);
-/*<!-- -------------- END $susy ---------------- -->*/
-/*<!-- ------------------------------------------ -->*/
 
 
 /*<!-- ------------------------------------------ -->*/
