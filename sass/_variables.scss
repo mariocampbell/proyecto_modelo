@@ -30,18 +30,30 @@
 @import 'breakpoint';
 
 $susy: (
-    columns: 12,
-    gutters: 0.25,
-    gutter-position: after,
-    debug: (
-        image: hide,
-        color: rgba(#66f, 0.25),
-        output: background,
-        toggle: top right,
-    ),
-    use-custom: (
-        box-sizing: true
-    )
+  columns: 12,
+  gutters: .25,
+  gutter-position: after,
+  flow: ltr,
+  math: fluid,
+  output: float,
+  container: auto,
+  container-position: center,
+  column-width: false,
+  global-box-sizing: content-box,
+  last-flow: to,
+  debug: (
+    image: hide,
+    color: rgba(#66f, .25),
+    output: background,
+    toggle: top right,
+  ),
+  use-custom: (
+    background-image: true,
+    background-options: false,
+    box-sizing: true,
+    clearfix: false,
+    rem: true,
+  )
 );
 /*<!-- -------------- END $susy ----------------- -->*/
 /*<!-- ------------------------------------------ -->*/
